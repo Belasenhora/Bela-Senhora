@@ -9,17 +9,28 @@
 <style>
 :root{--azul:#40add3;--escuro:#2189ad;--ouro:#c99b3b;--claro:#f4fbfd;--texto:#263941;--borda:#dfedf0}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--texto);font-family:Montserrat,Arial,sans-serif}a{text-decoration:none;color:inherit}button,input,textarea,select{font:inherit}button{cursor:pointer;border:0}
-.top{padding:7px 5%;display:flex;justify-content:flex-end;gap:20px;background:#f5fbfc;color:#52717b;font-size:12px}.top a:hover{color:var(--ouro)}
-header{position:sticky;top:0;z-index:20;background:linear-gradient(135deg,#2699c0,#42b5d8);box-shadow:0 3px 16px #12627c44}.nav{max-width:1250px;min-height:104px;margin:auto;padding:10px 24px;display:flex;align-items:center;justify-content:center;gap:28px;position:relative}.brand{text-align:center;min-width:245px}.brand strong{display:block;color:#ffe19a;font:500 25px "Playfair Display",serif;letter-spacing:3.5px;text-shadow:0 1px 2px #98701c88}.brand small{display:block;margin-top:6px;color:#ffe7a6;font-size:9px;font-weight:500;letter-spacing:2.8px}.links{display:flex;align-items:center;gap:19px;font-size:12px;font-weight:700;color:#fff}.links a:hover{color:#ffe6a6}.social{display:flex;gap:7px}.social a{width:30px;height:30px;border:1px solid #ffffffaa;border-radius:50%;display:grid;place-items:center}.hamb{display:none;background:none;color:#fff;font-size:27px}
-.hero{min-height:510px;display:grid;place-items:center;text-align:center;padding:65px 20px;background:linear-gradient(#0e526caa,#0e526c99),url('https://picsum.photos/seed/tercos-fe/1800/900') center/cover}.hero h1{max-width:800px;margin:0 auto 18px;color:#fff;font:600 clamp(36px,6vw,70px) "Playfair Display",serif}.hero p{color:#fff;font-size:17px}.btn{display:inline-block;background:var(--ouro);color:#fff;border-radius:28px;padding:13px 22px;margin:7px;font-weight:700;box-shadow:0 5px 12px #73500d33}.btn:hover{background:#a97e25}.btn.alt{background:#fff;color:var(--escuro)}
-.section{max-width:1180px;margin:auto;padding:70px 22px}.blue{max-width:none;background:var(--claro)}.title{text-align:center;margin-bottom:34px}.title h2{margin:0 0 10px;color:var(--escuro);font:600 38px "Playfair Display",serif}.title p,.copy{line-height:1.8;color:#657a82}.title p{max-width:720px;margin:auto}.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.about img{width:100%;height:350px;object-fit:cover;border-radius:24px}.grid,.steps,.features{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card,.step,.feature{background:#fff;border:1px solid var(--borda);border-radius:16px;overflow:hidden;box-shadow:0 5px 18px #1b647b10}.card img{width:100%;height:190px;object-fit:cover}.card-body{padding:16px}.card h3,.feature h3{margin:0 0 8px;color:var(--escuro);font:600 21px "Playfair Display",serif}.card p,.feature p,.step p{font-size:13px;line-height:1.6;color:#6a7d84}.card .btn{font-size:12px;padding:10px 15px;margin:4px 0}.step,.feature{text-align:center;padding:22px}.step b{display:grid;place-items:center;width:43px;height:43px;margin:auto;background:var(--ouro);color:#fff;border-radius:50%}.feature i{font-size:30px;color:var(--ouro)}
-.reviews{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:980px;margin:auto}.review-card{background:#fff;border:1px solid var(--borda);border-radius:16px;padding:12px;box-shadow:0 5px 18px #1b647b10}.review-card img{display:block;width:100%;height:250px;object-fit:cover;border-radius:10px}.review-card figcaption{padding:12px 4px 4px;text-align:center;color:#657a82;font-size:12px}.stars{color:var(--ouro);font-size:29px;letter-spacing:4px;line-height:1;margin:4px 0 16px}
+.top{padding:7px 5%;display:flex;justify-content:flex-end;gap:20px;background:#f5fbfc;color:#52717b;font-size:12px}
+header{position:sticky;top:0;z-index:20;background:linear-gradient(135deg,#2699c0,#42b5d8);box-shadow:0 3px 16px #12627c44}
+.nav{max-width:1250px;min-height:104px;margin:auto;padding:10px 24px;display:flex;align-items:center;justify-content:center;gap:28px;position:relative}
+.brand{text-align:center;min-width:245px}.brand strong{display:block;color:#ffe19a;font:500 25px "Playfair Display",serif;letter-spacing:3.5px}.brand small{display:block;margin-top:6px;color:#ffe7a6;font-size:9px;font-weight:500;letter-spacing:2.8px}
+.links{display:flex;align-items:center;gap:19px;font-size:12px;font-weight:700;color:#fff}.social{display:flex;gap:7px}.social a{width:30px;height:30px;border:1px solid #ffffffaa;border-radius:50%;display:grid;place-items:center}.hamb{display:none;background:none;color:#fff;font-size:27px}
+.hero{min-height:510px;display:grid;place-items:center;text-align:center;padding:65px 20px;background:linear-gradient(#0e526caa,#0e526c99),url('https://picsum.photos/seed/tercos-fe/1800/900') center/cover}
+.hero h1{max-width:800px;margin:0 auto 18px;color:#fff;font:600 clamp(36px,6vw,70px) "Playfair Display",serif}.hero p{color:#fff;font-size:17px}
+.btn{display:inline-block;background:var(--ouro);color:#fff;border-radius:28px;padding:13px 22px;margin:7px;font-weight:700;box-shadow:0 5px 12px #73500d33}.btn.alt{background:#fff;color:var(--escuro)}
+.section{max-width:1180px;margin:auto;padding:70px 22px}.blue{max-width:none;background:var(--claro)}.title{text-align:center;margin-bottom:34px}.title h2{margin:0 0 10px;color:var(--escuro);font:600 38px "Playfair Display",serif}.title p,.copy{line-height:1.8;color:#657a82}.title p{max-width:720px;margin:auto}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.about img{width:100%;height:350px;object-fit:cover;border-radius:24px}
+.grid,.steps,.features{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card,.step,.feature{background:#fff;border:1px solid var(--borda);border-radius:16px;overflow:hidden;box-shadow:0 5px 18px #1b647b10}.card img{width:100%;height:190px;object-fit:cover}.card-body{padding:16px}.card h3,.feature h3{margin:0 0 8px;color:var(--escuro);font:600 21px "Playfair Display",serif}.card p,.feature p,.step p{font-size:13px;line-height:1.6;color:#6a7d84}.card .btn{font-size:12px;padding:10px 15px;margin:4px 0}.step,.feature{text-align:center;padding:22px}.step b{display:grid;place-items:center;width:43px;height:43px;margin:auto;background:var(--ouro);color:#fff;border-radius:50%}.feature i{font-size:30px;color:var(--ouro)}
 .contact{padding:55px 20px;text-align:center;color:#fff;background:linear-gradient(135deg,#238dae,#40add3)}.contact h2{font:600 36px "Playfair Display",serif}.contact a{display:block;margin:12px}.footer{padding:24px;text-align:center;color:#d8eef2;background:#194c5d;font-size:12px}
-.inspiration-card{cursor:pointer;background:#fff;border:1px solid var(--borda);border-radius:16px;overflow:hidden;box-shadow:0 5px 18px #1b647b10;transition:.25s;position:relative}.inspiration-card:hover{transform:translateY(-4px);box-shadow:0 10px 24px #1b647b22}.inspiration-slideshow{height:220px;overflow:hidden;position:relative}.inspiration-slideshow img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .7s}.inspiration-slideshow img.active{opacity:1}.inspiration-dots{position:absolute;bottom:10px;left:0;right:0;text-align:center;z-index:2}.inspiration-dots i{display:inline-block;width:8px;height:8px;margin:0 3px;border-radius:50%;background:#fff9;border:1px solid #fff}.inspiration-dots i.active{background:var(--ouro)}.inspiration-card h3{margin:0;padding:16px;color:var(--escuro);font:600 21px "Playfair Display",serif;text-align:center}
-.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:20px 0}.gallery img{width:100%;height:240px;object-fit:cover;border-radius:12px}.gallery-action{text-align:center;margin-top:12px}
-.modal{display:none;position:fixed;inset:0;z-index:50;overflow:auto;padding:18px;background:#061f28aa}.modal.open{display:block}.box{max-width:850px;margin:25px auto;padding:25px;background:#fff;border-radius:18px;position:relative}.close{position:absolute;right:15px;top:10px;background:none;font-size:27px;color:#789}.tabs{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0}.tab{padding:9px 12px;background:#eef8fa;border-radius:20px;white-space:nowrap}.tab.active{background:var(--azul);color:#fff}.choices{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.choice{padding:10px;border:2px solid var(--borda);border-radius:12px;background:#fff;text-align:center;font-size:12px}.choice.selected{border-color:var(--ouro);box-shadow:0 0 0 2px #d8ae4b55}.choice img{width:100%;height:95px;object-fit:cover;border-radius:8px}.choice strong{display:block;margin:7px 0 3px}.form{display:grid;grid-template-columns:1fr 1fr;gap:12px}.form input,.form textarea,.form select{width:100%;padding:12px;border:1px solid #cfdfe3;border-radius:8px}.form textarea{min-height:90px}.full{grid-column:1/-1}.summary{padding:15px;background:#f3fafb;border-radius:12px;line-height:1.8}.cartbar{position:fixed;right:18px;bottom:18px;z-index:30;padding:13px 19px;border-radius:30px;background:var(--ouro);color:#fff;font-weight:700}.toast{display:none;position:fixed;bottom:80px;left:50%;z-index:70;transform:translateX(-50%);padding:13px 20px;background:#254b57;color:#fff;border-radius:22px}.toast.show{display:block}
-@media(max-width:850px){.top{display:none}.nav{min-height:74px;justify-content:space-between}.hamb{display:block;order:-1}.links{display:none}.links.show{position:absolute;top:74px;left:0;right:0;display:flex;flex-direction:column;padding:18px;background:#258eaf}.brand{min-width:0}.brand strong{font-size:20px;letter-spacing:2.5px}.brand small{font-size:8px;letter-spacing:2px}.grid,.steps,.features{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr}.choices{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:500px){.grid,.steps,.features,.form{grid-template-columns:1fr}.reviews{grid-template-columns:1fr}.review-card img{height:220px}.gallery{grid-template-columns:1fr}.gallery img{height:220px}.inspiration-slideshow{height:220px}.section{padding:50px 16px}.title h2{font-size:31px}.box{padding:18px}.btn{padding:12px 17px}}
+.inspiration-card{cursor:pointer;background:#fff;border:1px solid var(--borda);border-radius:16px;overflow:hidden;box-shadow:0 5px 18px #1b647b10}.inspiration-card img{width:100%;height:220px;object-fit:cover;display:block}.inspiration-card h3{margin:0;padding:16px;color:var(--escuro);font:600 21px "Playfair Display",serif;text-align:center}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:20px 0}.gallery img{width:100%;height:240px;object-fit:cover;border-radius:12px}
+.modal{display:none;position:fixed;inset:0;z-index:50;overflow:auto;padding:18px;background:#061f28aa}.modal.open{display:block}.box{max-width:900px;margin:25px auto;padding:25px;background:#fff;border-radius:18px;position:relative}.close{position:absolute;right:15px;top:10px;background:none;font-size:27px;color:#789}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0}.tab{padding:9px 12px;background:#eef8fa;border-radius:20px;white-space:nowrap}.tab.active{background:var(--azul);color:#fff}
+.choices{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.choice{padding:10px;border:2px solid var(--borda);border-radius:12px;background:#fff;text-align:center;font-size:12px}.choice.selected{border-color:var(--ouro);box-shadow:0 0 0 2px #d8ae4b55}.choice.disabled{opacity:.45;cursor:not-allowed}.choice img{width:100%;height:95px;object-fit:cover;border-radius:8px}.choice strong{display:block;margin:7px 0 3px}.choice small{display:block;margin-top:6px;color:#657a82}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:12px}.form input,.form textarea,.form select{width:100%;padding:12px;border:1px solid #cfdfe3;border-radius:8px}.form textarea{min-height:90px}.full{grid-column:1/-1}.summary{padding:15px;background:#f3fafb;border-radius:12px;line-height:1.8}
+.cartbar,.stockbar{position:fixed;bottom:18px;z-index:30;padding:13px 19px;border-radius:30px;color:#fff;font-weight:700}.cartbar{right:18px;background:var(--ouro)}.stockbar{left:18px;background:#194c5d}.toast{display:none;position:fixed;bottom:80px;left:50%;z-index:70;transform:translateX(-50%);padding:13px 20px;background:#254b57;color:#fff;border-radius:22px}.toast.show{display:block}
+.stock-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.stock-group{border:1px solid var(--borda);border-radius:14px;padding:15px}.stock-group h3{margin-top:0;color:var(--escuro)}.stock-row{display:grid;grid-template-columns:1fr 90px;gap:10px;align-items:center;margin:9px 0;font-size:13px}.stock-row input{width:100%;padding:9px;border:1px solid #cfdfe3;border-radius:7px}
+@media(max-width:850px){.top{display:none}.nav{min-height:74px;justify-content:space-between}.hamb{display:block;order:-1}.links{display:none}.links.show{position:absolute;top:74px;left:0;right:0;display:flex;flex-direction:column;padding:18px;background:#258eaf}.brand{min-width:0}.brand strong{font-size:20px}.brand small{font-size:8px}.grid,.steps,.features{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr}.choices{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:500px){.grid,.steps,.features,.form,.stock-grid{grid-template-columns:1fr}.section{padding:50px 16px}.title h2{font-size:31px}.box{padding:18px}.btn{padding:12px 17px}.gallery{grid-template-columns:1fr}.gallery img{height:220px}.stockbar{left:10px}.cartbar{right:10px}}
 </style>
 </head>
 <body>
@@ -28,54 +39,50 @@ header{position:sticky;top:0;z-index:20;background:linear-gradient(135deg,#2699c
 <a href="https://www.pinterest.com/belasenhoraatelie/" target="_blank">Pinterest</a>
 <a href="https://wa.me/5547999383797" target="_blank">WhatsApp</a>
 </div>
-<header>
-<nav class="nav">
+<header><nav class="nav">
 <button class="hamb" onclick="document.querySelectorAll('.links')[0].classList.toggle('show')">☰</button>
 <div class="links"><a href="#atelie">O Ateliê</a><a href="#como">Como funciona</a><a href="#produtos">Produtos</a></div>
 <a class="brand" href="#inicio"><strong>BELA SENHORA</strong><small>TERÇOS PERSONALIZADOS</small></a>
 <div class="links"><a href="#inspiracoes">Inspirações</a><a href="#contato">Contato</a><span class="social"><a href="https://www.instagram.com/belasenhoraatelie/" target="_blank">◎</a><a href="https://www.pinterest.com/belasenhoraatelie/" target="_blank">P</a><a href="https://wa.me/5547999383797" target="_blank">◉</a></span></div>
-</nav>
-</header>
+</nav></header>
 <main id="inicio">
 <section class="hero"><div><h1>Terços que unem fé, beleza, qualidade e valor afetivo.</h1><p>Terços personalizados e lembranças religiosas feitos com carinho.</p><a class="btn" href="#produtos">Montar meu terço</a><a class="btn alt" href="#atelie">Conhecer o ateliê</a></div></section>
 <section class="section" id="atelie"><div class="about">
 <img src="imagens/o-atelie.jpeg" alt="O Ateliê">
-<div><div class="title" style="text-align:left"><h2>O Ateliê</h2></div><p class="copy">Aos 25 anos, com duas filhas pequenas, escolhi estar presente em cada momento da vida delas.<br><br>Porém, junto à rotina, vieram desafios financeiros e um sentimento de limitação; Como se eu fosse “apenas mãe”.<br><br>Buscando realização e independência sem me afastar delas, comecei a rezar até que em uma quinta-feira de Adoração Eucaristica, segurando um terço infantil, senti o chamado de Jesus: “Por que você não faz para vender?”.<br><br>Mesmo com medo e dúvidas, segui em frente, com o coração sendo acalmado e guiado a cada passo. Assim, em agosto de 2024, nasceu o Bela Senhora Ateliê, não só um negócio, mas a resposta viva das minhas orações.</p></div>
+<div><div class="title" style="text-align:left"><h2>O Ateliê</h2></div><p class="copy">Aos 25 anos, com duas filhas pequenas, escolhi estar presente em cada momento da vida delas.<br><br>Porém, junto à rotina, vieram desafios financeiros e um sentimento de limitação; Como se eu fosse “apenas mãe”.<br><br>Buscando realização e independência sem me afastar delas, comecei a rezar até que em uma quinta-feira de Adoração Eucarística, segurando um terço infantil, senti o chamado de Jesus: “Por que você não faz para vender?”.<br><br>Mesmo com medo e dúvidas, segui em frente, com o coração sendo acalmado e guiado a cada passo. Assim, em agosto de 2024, nasceu o Bela Senhora Ateliê, não só um negócio, mas a resposta viva das minhas orações.</p></div>
 </div></section>
 <section class="section blue" id="como"><div class="title"><h2>Como funciona</h2><p>Monte seu terço escolhendo cada detalhe da peça.</p></div><div class="steps">
-<div class="step"><b>1</b><h3>Escolha o entremeio</h3><p>Selecione entre as opções identificadas por códigos como E01, E02 e E03.</p></div>
-<div class="step"><b>2</b><h3>Escolha o crucifixo</h3><p>Escolha o modelo identificado por códigos como C01, C02 e C03.</p></div>
-<div class="step"><b>3</b><h3>Escolha as contas</h3><p>Escolha as contas de Ave Maria e Pai Nosso.</p></div>
-<div class="step"><b>4</b><h3>Escolha a técnica</h3><p>Defina a técnica de montagem da sua peça.</p></div>
-<div class="step"><b>5</b><h3>Separe as contas</h3><p>Escolha separação de 3mm ou nó franciscano, quando aplicável.</p></div>
-<div class="step"><b>6</b><h3>Confira o resumo</h3><p>Revise todas as escolhas antes de adicionar o terço ao carrinho.</p></div>
+<div class="step"><b>1</b><h3>Entremeio</h3><p>Escolha o modelo disponível.</p></div>
+<div class="step"><b>2</b><h3>Crucifixo</h3><p>Escolha o crucifixo da sua peça.</p></div>
+<div class="step"><b>3</b><h3>Contas</h3><p>Escolha Ave Maria e Pai Nosso.</p></div>
+<div class="step"><b>4</b><h3>Técnica</h3><p>Escolha a forma de montagem.</p></div>
+<div class="step"><b>5</b><h3>Separação</h3><p>Escolha 3mm ou nó franciscano.</p></div>
+<div class="step"><b>6</b><h3>Resumo</h3><p>Confira sua montagem e adicione ao carrinho.</p></div>
 </div><div style="text-align:center"><a class="btn" href="#produtos">Começar minha montagem</a></div></section>
 <section class="section blue"><div class="title"><h2>O que fazemos</h2><p>Criamos terços personalizados com fotos, nomes e detalhes especiais, além de lembranças para batizados, terços de casamento, dezenas, chaveiros e canecas personalizadas.</p></div><div class="features">
-<div class="feature"><i>✧</i><h3>Terços personalizados</h3><p>Escolha contas, entremeio, cruz e detalhes.</p></div>
+<div class="feature"><i>✧</i><h3>Terços personalizados</h3><p>Escolha contas, entremeio, crucifixo e detalhes.</p></div>
 <div class="feature"><i>♡</i><h3>Lembranças de batizado</h3><p>Peças delicadas para celebrar a fé.</p></div>
 <div class="feature"><i>∞</i><h3>Terços de casamento</h3><p>Uma lembrança especial para uma nova história.</p></div>
 <div class="feature"><i>✦</i><h3>Dezenas e chaveiros</h3><p>Opções para presentear e carregar consigo.</p></div>
 </div></section>
 <section class="section" id="produtos"><div class="title"><h2>Produtos</h2><p>Escolha uma categoria para começar a montar sua peça.</p></div><div class="grid" id="productGrid"></div></section>
-<section class="section blue" id="inspiracoes"><div class="title"><h2>Algumas combinações para inspirar você</h2><p>Você pode combinar como preferir.</p></div><div class="grid" id="inspirationGrid"></div></section>
-<section class="section" id="avaliacoes"><div class="title"><h2>O que falam de nós</h2><p>A avaliação das nossas clientes é muito importante para o Bela Senhora.</p><div class="stars" aria-label="Avaliação de 5 estrelas">★★★★★</div><strong>5,0 no Google</strong></div><div class="reviews">
-<figure class="review-card"><img src="https://picsum.photos/seed/avaliacao-google-1/900/650" alt="Imagem de avaliação de cliente no Google"><figcaption>Avaliação de cliente no Google</figcaption></figure>
-<figure class="review-card"><img src="https://picsum.photos/seed/comentario-cliente-1/900/650" alt="Imagem de comentário de cliente"><figcaption>Comentário de cliente</figcaption></figure>
-<figure class="review-card"><img src="https://picsum.photos/seed/avaliacao-google-2/900/650" alt="Imagem de avaliação de cliente no Google"><figcaption>Avaliação de cliente no Google</figcaption></figure>
-<figure class="review-card"><img src="https://picsum.photos/seed/comentario-cliente-2/900/650" alt="Imagem de comentário de cliente"><figcaption>Comentário de cliente</figcaption></figure>
-</div></section>
+<section class="section blue" id="inspiracoes"><div class="title"><h2>Inspirações</h2><p>Algumas combinações para inspirar você.</p></div><div class="grid" id="inspirationGrid"></div></section>
+<section class="section"><div class="title"><h2>O que falam de nós</h2><div style="color:var(--ouro);font-size:29px">★★★★★</div><strong>5,0 no Google</strong></div></section>
 </main>
 <section class="contact" id="contato"><h2>Contato</h2><p>Artesã: Sheslley Franklin dos Santos</p><a href="mailto:belasenhoraatelie@gmail.com">✉ belasenhoraatelie@gmail.com</a><a href="https://wa.me/5547999383797" target="_blank">◉ (47) 99938-3797</a></section>
 <footer class="footer">Bela Senhora • Terços personalizados<br>© 2026 Bela Senhora. Todos os direitos reservados.</footer>
-<button class="cartbar" onclick="openCart()">🛒 Carrinho <span id="cartCount">0</span></button><div class="toast" id="toast"></div>
-<div class="modal" id="builderModal"><div class="box"><button class="close" onclick="closeModal('builderModal')">×</button><h2 id="builderTitle">Montar meu terço</h2><span id="progress">1/6</span><div class="tabs" id="tabs"></div><div id="builderBody"></div><div style="text-align:right;margin-top:20px"><button class="btn alt" onclick="prevStep()">Voltar</button><button class="btn" onclick="nextStep()">Continuar</button></div></div></div>
-<div class="modal" id="cartModal"><div class="box"><button class="close" onclick="closeModal('cartModal')">×</button><h2>Seu carrinho</h2><div id="cartBody"></div></div></div>
-<div class="modal" id="inspirationModal"><div class="box"><button class="close" onclick="closeModal('inspirationModal')">×</button><h2 id="inspirationTitle">Inspiração</h2><div class="gallery" id="inspirationGallery"></div><div class="gallery-action"><button class="btn" id="inspirationOrder">Faça seu pedido</button></div></div></div>
-<div class="modal" id="deliveryModal"><div class="box"><button class="close" onclick="closeModal('deliveryModal')">×</button><h2>Entrega e confirmação</h2><form class="form" id="deliveryForm">
+<button class="stockbar" onclick="abrirEstoque()">🔒 Acesso privado</button>
+<button class="cartbar" onclick="abrirCarrinho()">🛒 Carrinho <span id="cartCount">0</span></button>
+<div class="toast" id="toast"></div>
+<div class="modal" id="builderModal"><div class="box"><button class="close" onclick="fechar('builderModal')">×</button><h2 id="builderTitle"></h2><span id="progress"></span><div class="tabs" id="tabs"></div><div id="builderBody"></div><div style="text-align:right;margin-top:20px"><button class="btn alt" onclick="voltar()">Voltar</button><button class="btn" onclick="avancar()">Continuar</button></div></div></div>
+<div class="modal" id="stockModal"><div class="box"><button class="close" onclick="fechar('stockModal')">×</button><h2>Gerenciar estoque</h2><p class="copy">Altere as quantidades e clique em salvar.</p><div class="stock-grid" id="stockBody"></div><button class="btn" onclick="salvarEstoque()">Salvar estoque</button></div></div>
+<div class="modal" id="cartModal"><div class="box"><button class="close" onclick="fechar('cartModal')">×</button><h2>Seu carrinho</h2><div id="cartBody"></div></div></div>
+<div class="modal" id="deliveryModal"><div class="box"><button class="close" onclick="fechar('deliveryModal')">×</button><h2>Entrega e confirmação</h2><form class="form" id="deliveryForm">
 <input name="nome" required placeholder="Nome completo"><input name="telefone" required placeholder="Telefone"><input name="email" type="email" required placeholder="E-mail"><input name="cep" required placeholder="CEP"><input class="full" name="endereco" required placeholder="Endereço completo"><input name="cidade" required placeholder="Cidade"><input name="estado" required placeholder="Estado">
-<select name="frete" onchange="toggleCpf(this.value)" required><option value="">Forma de entrega</option><option>Retirada no ateliê</option><option>Envio dentro da cidade por aplicativo</option><option>Frete nacional por transportadora</option></select><input id="cpf" name="cpf" placeholder="CPF, obrigatório para envio nacional" style="display:none">
+<select name="frete" required><option value="">Forma de entrega</option><option>Retirada no ateliê</option><option>Envio dentro da cidade por aplicativo</option><option>Frete nacional por transportadora</option></select>
 <select name="origem" required><option value="">De onde nos conheceu?</option><option>Instagram</option><option>Pinterest</option><option>Google</option><option>Indicação</option><option>Outro</option></select>
-<label class="full"><input type="checkbox" required> Autorizo o uso dos meus dados para atendimento, processamento do pedido e comunicação relacionada à compra, conforme a LGPD.</label><button class="btn full" type="submit">Confirmar solicitação</button>
+<label class="full"><input type="checkbox" required> Autorizo o uso dos meus dados para atendimento e processamento do pedido, conforme a LGPD.</label>
+<button class="btn full" type="submit">Enviar pedido pelo WhatsApp</button>
 </form></div></div>
 <script>
 const produtos=[
@@ -83,193 +90,162 @@ const produtos=[
 {id:"dezena",name:"Dezena",desc:"Uma pequena peça para carregar consigo.",img:"imagens/dezena.jpeg"},
 {id:"chaveiro",name:"Chaveiro",desc:"Delicadeza e significado para presentear.",img:"imagens/chaveiro.jpeg"},
 {id:"caneca",name:"Caneca personalizada",desc:"Uma lembrança afetiva e exclusiva.",img:"imagens/caneca.jpeg"}];
-const contas=[["A01","Cristal translúcido"],["A02","Pérola multifacetada"],["A03","Cristal rosa"],["A04","Cristal azul"]];
-const entremeios=[["E01","Entremeio delicado"],["E02","Entremeio dourado"],["E03","Entremeio trabalhado"],["E04","Entremeio clássico"]];
-const cruzes=[["C01","Cruz tradicional"],["C02","Cruz trabalhada"],["C03","Cruz com detalhes"]];
-const modelosChaveiro=[["K01","Modelo simples"],["K02","Modelo bordado"]];
-const modelosCaneca=[["M01","Caneca branca"],["M02","Caneca com alça colorida"],["M03","Caneca personalizada"]];
+const contas=Array.from({length:30},(_,i)=>[`A${String(i+1).padStart(2,"0")}`,"Conta"]);
+const entremeios=Array.from({length:30},(_,i)=>[`E${String(i+1).padStart(2,"0")}`,"Entremeio"]);
+const crucifixos=Array.from({length:30},(_,i)=>[`C${String(i+1).padStart(2,"0")}`,"Crucifixo"]);
 const tecnicas=[["T01","Tradicional com nó franciscano"],["T02","Contrapino"],["T03","Nó invisível"]];
 const separacoes=[["S01","3mm"],["S02","Nó franciscano"]];
-const inspiracoes={
-terco:["https://picsum.photos/seed/inspiracao-terco-1/900/700","https://picsum.photos/seed/inspiracao-terco-2/900/700","https://picsum.photos/seed/inspiracao-terco-3/900/700"],
-dezena:["https://picsum.photos/seed/inspiracao-dezena-1/900/700","https://picsum.photos/seed/inspiracao-dezena-2/900/700","https://picsum.photos/seed/inspiracao-dezena-3/900/700"],
-chaveiro:["https://picsum.photos/seed/inspiracao-chaveiro-1/900/700","https://picsum.photos/seed/inspiracao-chaveiro-2/900/700","https://picsum.photos/seed/inspiracao-chaveiro-3/900/700"],
-caneca:["https://picsum.photos/seed/inspiracao-caneca-1/900/700","https://picsum.photos/seed/inspiracao-caneca-2/900/700","https://picsum.photos/seed/inspiracao-caneca-3/900/700"]
+const modelosChaveiro=[["K01","Modelo simples"],["K02","Modelo bordado"]];
+const modelosCaneca=[["M01","Caneca branca"],["M02","Caneca com alça colorida"],["M03","Caneca personalizada"]];
+const SENHA_ESTOQUE="Bela@2026";
+const imagens={
+contas:i=>i===0?"imagens/conta.jpeg":`imagens/conta${i}.jpeg`,
+entremeios:i=>i===0?"imagens/entremeio.jpeg":`imagens/entremeio${i}.jpeg`,
+crucifixos:i=>i===0?"imagens/crucifixo.jpeg":`imagens/crucifixo${i}.jpeg`
 };
-let catalogo=produtos,carrinho=ler("carrinho")||[],etapa=0,atual=null,escolhas={};
-function ler(k){try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}}
-function salvar(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
-function esc(v){return String(v).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[m]))}
+function ler(chave){try{return JSON.parse(localStorage.getItem(chave))}catch(e){return null}}
+function salvar(chave,valor){try{localStorage.setItem(chave,JSON.stringify(valor));return true}catch(e){return false}}
+function esc(valor){return String(valor).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[m]))}
 function mostrar(id){document.getElementById(id).classList.add("open")}
-function closeModal(id){document.getElementById(id).classList.remove("open")}
-function aviso(t){const x=document.getElementById("toast");x.textContent=t;x.classList.add("show");setTimeout(()=>x.classList.remove("show"),3200)}
+function fechar(id){document.getElementById(id).classList.remove("open")}
+function aviso(texto){const el=document.getElementById("toast");el.textContent=texto;el.classList.add("show");setTimeout(()=>el.classList.remove("show"),2800)}
+function nomeOpcao(codigo,lista){const item=lista.find(x=>x[0]===codigo);return item?`${item[0]} - ${item[1]}`:codigo}
+function estoqueDisponivel(grupo,codigo){
+const gruposComEstoque=["contas","entremeios","crucifixos","canecas"];
+return !gruposComEstoque.includes(grupo)||Number(estoque[grupo]?.[codigo]||0)>0
+}
+function padraoEstoque(){
+const criar=lista=>Object.fromEntries(lista.map(x=>[x[0],10]));
+return{contas:criar(contas),entremeios:criar(entremeios),crucifixos:criar(crucifixos),canecas:{M01:10,M02:10,M03:10}}
+}
+let estoque=ler("estoque-bela-senhora")||padraoEstoque();
+let carrinho=ler("carrinho-bela-senhora")||[],etapa=0,atual=null,escolhas={};
+function imagemEscolha(grupo,i){
+return imagens[grupo]?imagens[grupo](i):`https://picsum.photos/seed/${grupo+i}/400/300`
+}
+function listaEscolha(lista,grupo,chave){
+const gruposComEstoque=["contas","entremeios","crucifixos","canecas"];
+const controlaEstoque=gruposComEstoque.includes(grupo);
+return `<div class="choices">${lista.map((x,i)=>{
+const sem=controlaEstoque&&!estoqueDisponivel(grupo,x[0]);
+const informacao=controlaEstoque?(sem?"Sem estoque":"Estoque: "+estoque[grupo][x[0]]):"";
+return `<button class="choice ${escolhas[chave]===x[0]?"selected":""} ${sem?"disabled":""}" ${sem?"disabled":`onclick="escolhas['${chave}']='${x[0]}';montar()"`}><img src="${imagemEscolha(grupo,i)}" alt="${x[1]}"><strong>${x[1]}</strong>${informacao?`<small>${informacao}</small>`:""}</button>`
+}).join("")}</div>`
+}
 function render(){
-document.getElementById("productGrid").innerHTML=catalogo.map(p=>`<article class="card"><img src="${p.img}" alt="${esc(p.name)}"><div class="card-body"><h3>${esc(p.name)}</h3><p>${esc(p.desc)}</p><button class="btn" onclick="abrir('${p.id}')">Montar agora</button></div></article>`).join("");
-document.getElementById("inspirationGrid").innerHTML=catalogo.map(p=>{
-const fotos=inspiracoes[p.id]||[p.img];
-return `<article class="inspiration-card" onclick="openInspiration('${p.id}')"><div class="inspiration-slideshow">${fotos.map((img,i)=>`<img class="${i===0?"active":""}" src="${img}" alt="${esc(p.name)} - inspiração ${i+1}">`).join("")}<span class="inspiration-dots">${fotos.map((img,i)=>`<i class="${i===0?"active":""}"></i>`).join("")}</span></div><h3>${esc(p.name)}</h3></article>`
-}).join("");
-iniciarCarrosseis();
+document.getElementById("productGrid").innerHTML=produtos.map(p=>`<article class="card"><img src="${p.img}" alt="${esc(p.name)}"><div class="card-body"><h3>${esc(p.name)}</h3><p>${esc(p.desc)}</p><button class="btn" onclick="abrirProduto('${p.id}')">Montar agora</button></div></article>`).join("");
+document.getElementById("inspirationGrid").innerHTML=produtos.map(p=>`<article class="inspiration-card" onclick="abrirProduto('${p.id}')"><img src="${p.img}" alt="${esc(p.name)}"><h3>${esc(p.name)}</h3></article>`).join("");
 document.getElementById("cartCount").textContent=carrinho.length
 }
-function iniciarCarrosseis(){
-document.querySelectorAll(".inspiration-slideshow").forEach(slide=>{
-const imagens=slide.querySelectorAll("img"),pontos=slide.querySelectorAll(".inspiration-dots i");
-if(imagens.length<2)return;
-let atualSlide=0;
-setInterval(()=>{
-imagens[atualSlide].classList.remove("active");pontos[atualSlide].classList.remove("active");
-atualSlide=(atualSlide+1)%imagens.length;
-imagens[atualSlide].classList.add("active");pontos[atualSlide].classList.add("active")
-},3000)
-})
-}
-function openInspiration(id){
-const produto=catalogo.find(p=>p.id===id);
-if(!produto)return;
-document.getElementById("inspirationTitle").textContent=produto.name;
-document.getElementById("inspirationGallery").innerHTML=(inspiracoes[id]||[produto.img]).map((img,i)=>`<img src="${img}" alt="${esc(produto.name)} - inspiração ${i+1}">`).join("");
-document.getElementById("inspirationOrder").onclick=function(){closeModal("inspirationModal");abrir(id)};
-mostrar("inspirationModal")
-}
-function abrir(id){
-atual=catalogo.find(p=>p.id===id);etapa=0;escolhas={};
+function abrirProduto(id){
+atual=produtos.find(p=>p.id===id);etapa=0;escolhas={};
 document.getElementById("builderTitle").textContent=atual.name;
-mostrar("builderModal");montar()
+montar();mostrar("builderModal")
 }
 function montar(){
-const tipo=atual.id;
-let nomes,total;
-if(tipo==="chaveiro"){nomes=["Modelo","Contas","Detalhes","Resumo"];total=4}
-else if(tipo==="caneca"){nomes=["Detalhes","Resumo"];total=2}
-else{nomes=["Entremeio","Crucifixo","Ave Maria","Pai Nosso","Técnica","Separar contas","Extras","Detalhes","Resumo"];total=9}
-document.getElementById("progress").textContent=(etapa+1)+"/"+total;
+const completo=atual.id==="terco"||atual.id==="dezena";
+const nomes=completo?["Entremeio","Crucifixo","Ave Maria","Pai Nosso","Técnica","Separar contas","Extras","Detalhes","Resumo"]:atual.id==="chaveiro"?["Modelo","Contas","Detalhes","Resumo"]:["Detalhes","Resumo"];
+document.getElementById("progress").textContent=`${etapa+1}/${nomes.length}`;
 document.getElementById("tabs").innerHTML=nomes.map((n,i)=>`<button class="tab ${i===etapa?"active":""}" onclick="etapa=${i};montar()">${i+1}. ${n}</button>`).join("");
 let body="";
-if(tipo==="chaveiro"){
-if(etapa===0)body=`<p class="copy">Escolha o modelo do chaveiro.</p><div class="choices">${modelosChaveiro.map(x=>`<button class="choice ${escolhas.modelo===x[0]?"selected":""}" onclick="escolhas.modelo='${x[0]}';montar()"><img src="https://picsum.photos/seed/${x[0]}/400/300" alt="${x[1]}"><strong>${x[0]}</strong>${x[1]}</button>`).join("")}</div>`;
-else if(etapa===1)body=`<p class="copy">Escolha a cor das contas do chaveiro.</p><div class="choices">${contas.map(x=>`<button class="choice ${escolhas.contas===x[0]?"selected":""}" onclick="escolhas.contas='${x[0]}';montar()"><img src="https://picsum.photos/seed/${x[0]}/400/300" alt="${x[1]}"><strong>${x[0]}</strong>${x[1]}</button>`).join("")}</div>`;
-else if(etapa===2)body=`<div class="form"><input id="nomeDetalhe" value="${esc(escolhas.nome||"")}" placeholder="Nome personalizado"><label class="full">Foto para personalização: <input id="foto" type="file" accept="image/*"></label>${escolhas.fotoNome?`<small class="full">Imagem selecionada: ${esc(escolhas.fotoNome)}</small>`:""}</div>`;
-else body=`<div class="summary"><h3>Resumo do chaveiro</h3><p><b>Produto:</b> ${esc(atual.name)}</p><p><b>Modelo:</b> ${esc(escolhas.modelo||"Não selecionado")}</p><p><b>Contas:</b> ${esc(escolhas.contas||"Não selecionadas")}</p><p><b>Nome:</b> ${esc(escolhas.nome||"Não informado")}</p><p><b>Imagem:</b> ${esc(escolhas.fotoNome||"Nenhuma imagem enviada")}</p><p>O valor será confirmado pelo ateliê.</p></div>`;
-}else if(tipo==="caneca"){
-if(etapa===0)body=`<div class="form"><label class="full"><b>Canecas</b><select id="modeloCaneca">${modelosCaneca.map(x=>`<option value="${x[0]}" ${escolhas.caneca===x[0]?"selected":""}>${x[0]} - ${x[1]}</option>`).join("")}</select></label><textarea id="detalhesCaneca" class="full" placeholder="Adicione referências ou o texto que deseja colocar na caneca">${esc(escolhas.detalhes||"")}</textarea><label class="full">Imagem de referência: <input id="foto" type="file" accept="image/*"></label>${escolhas.fotoNome?`<small class="full">Imagem selecionada: ${esc(escolhas.fotoNome)}</small>`:""}</div>`;
-else body=`<div class="summary"><h3>Resumo da caneca</h3><p><b>Produto:</b> ${esc(atual.name)}</p><p><b>Caneca:</b> ${esc(escolhas.caneca||"Não selecionada")}</p><p><b>Detalhes:</b> ${esc(escolhas.detalhes||"Não informado")}</p><p><b>Imagem:</b> ${esc(escolhas.fotoNome||"Nenhuma imagem enviada")}</p><p>O valor será confirmado pelo ateliê.</p></div>`;
-}else{
-if(etapa===0)body=`<p class="copy">Escolha o entremeio. As cores podem apresentar pequenas variações conforme a disponibilidade.</p><div class="choices">${entremeios.map(x=>`<button class="choice ${escolhas.entremeio===x[0]?"selected":""}" onclick="escolhas.entremeio='${x[0]}';montar()"><img src="https://picsum.photos/seed/${x[0]}/400/300" alt="${x[1]}"><strong>${x[0]}</strong>${x[1]}</button>`).join("")}</div>`;
-else if(etapa===1)body=`<p class="copy">Escolha o crucifixo.</p><div class="choices">${cruzes.map(x=>`<button class="choice ${escolhas.crucifixo===x[0]?"selected":""}" onclick="escolhas.crucifixo='${x[0]}';montar()"><img src="https://picsum.photos/seed/${x[0]}/400/300" alt="${x[1]}"><strong>${x[0]}</strong>${x[1]}</button>`).join("")}</div>`;
-else if(etapa===2)body=`<p class="copy">Escolha as contas de Ave Maria.</p><div class="choices">${contas.map(x=>`<button class="choice ${escolhas.aveMaria===x[0]?"selected":""}" onclick="escolhas.aveMaria='${x[0]}';montar()"><img src="https://picsum.photos/seed/${x[0]}/400/300" alt="${x[1]}"><strong>${x[0]}</strong>${x[1]}</button>`).join("")}</div>`;
-else if(etapa===3)body=`<p class="copy">Escolha as contas de Pai Nosso.</p><div class="choices">${contas.map(x=>`<button class="choice ${escolhas.paiNosso===x[0]?"selected":""}" onclick="escolhas.paiNosso='${x[0]}';montar()"><img src="https://picsum.photos/seed/${x[0]}/400/300" alt="${x[1]}"><strong>${x[0]}</strong>${x[1]}</button>`).join("")}</div>`;
-else if(etapa===4)body=`<p class="copy">Escolha a técnica de montagem.</p><div class="choices">${tecnicas.map(x=>`<button class="choice ${escolhas.tecnica===x[0]?"selected":""}" onclick="escolhas.tecnica='${x[0]}';montar()"><strong>${x[0]}</strong>${x[1]}</button>`).join("")}</div>`;
+if(completo){
+if(etapa===0)body="<p class='copy'>Escolha o entremeio.</p>"+listaEscolha(entremeios,"entremeios","entremeio");
+else if(etapa===1)body="<p class='copy'>Escolha o crucifixo.</p>"+listaEscolha(crucifixos,"crucifixos","crucifixo");
+else if(etapa===2)body="<p class='copy'>Escolha as contas de Ave Maria.</p>"+listaEscolha(contas,"contas","aveMaria");
+else if(etapa===3)body="<p class='copy'>Escolha as contas de Pai Nosso.</p>"+listaEscolha(contas,"contas","paiNosso");
+else if(etapa===4)body="<p class='copy'>Escolha a técnica de montagem.</p>"+listaEscolha(tecnicas,"tecnicas","tecnica");
 else if(etapa===5){
-if(escolhas.tecnica==="T02"){
-escolhas.separacao="Não se aplica";
-body=`<div class="summary"><h3>Separar contas</h3><p>Para a técnica <b>Contrapino</b>, não é necessário escolher uma separação de contas.</p><p>A separação foi definida automaticamente como <b>Não se aplica</b>.</p></div>`;
+if(escolhas.tecnica==="T02"){escolhas.separacao="Não se aplica";body="<div class='summary'><h3>Separar contas</h3><p>Para a técnica <b>Contrapino</b>, não é necessário escolher uma separação.</p></div>"}
+else body="<p class='copy'>Escolha como separar as contas.</p>"+listaEscolha(separacoes,"separacoes","separacao")
+}else if(etapa===6)body=`<p class="copy">Escolha um extra.</p><div class="choices"><button class="choice ${escolhas.extra==="Relicário"?"selected":""}" onclick="escolhas.extra='Relicário';montar()"><strong>Relicário</strong>Adicionar relicário</button><button class="choice ${escolhas.extra==="Pingente"?"selected":""}" onclick="escolhas.extra='Pingente';montar()"><strong>Pingente</strong>Adicionar pingente</button><button class="choice ${escolhas.extra==="Não adicionar"?"selected":""}" onclick="escolhas.extra='Não adicionar';montar()"><strong>Não adicionar</strong>Sem extra</button></div>`;
+else if(etapa===7)body=`<div class="form"><input id="nomeDetalhe" placeholder="Nome personalizado" value="${esc(escolhas.nome||"")}"><textarea id="mensagem" class="full" placeholder="Mensagem ou observações">${esc(escolhas.mensagem||"")}</textarea><label class="full">Foto para personalização:<input id="fotoDetalhe" type="file" accept="image/*"></label>${escolhas.fotoNome?`<small class="full">Imagem selecionada: ${esc(escolhas.fotoNome)}</small>`:""}</div>`;
+else body=`<div class="summary"><h3>Resumo da montagem</h3><p>Entremeio: ${esc(nomeOpcao(escolhas.entremeio,entremeios))}</p><p>Crucifixo: ${esc(nomeOpcao(escolhas.crucifixo,crucifixos))}</p><p>Ave Maria: ${esc(nomeOpcao(escolhas.aveMaria,contas))}</p><p>Pai Nosso: ${esc(nomeOpcao(escolhas.paiNosso,contas))}</p><p>Técnica: ${esc(nomeOpcao(escolhas.tecnica,tecnicas))}</p><p>Separar contas: ${escolhas.tecnica==="T02"?"Não se aplica, técnica contrapino":esc(nomeOpcao(escolhas.separacao,separacoes))}</p><p>Extra: ${esc(escolhas.extra||"Não selecionado")}</p><p>Nome: ${esc(escolhas.nome||"Não informado")}</p><p>Mensagem: ${esc(escolhas.mensagem||"Não informada")}</p><p>Foto: ${esc(escolhas.fotoNome||"Nenhuma foto enviada")}</p></div>`;
+}else if(atual.id==="chaveiro"){
+if(etapa===0)body="<p class='copy'>Escolha o modelo do chaveiro.</p>"+listaEscolha(modelosChaveiro,"modelosChaveiro","modelo");
+else if(etapa===1)body="<p class='copy'>Escolha a cor das contas.</p>"+listaEscolha(contas,"contas","contas");
+else if(etapa===2)body=`<div class='form'><input id='nomeDetalhe' placeholder='Nome personalizado' value="${esc(escolhas.nome||"")}"><label class="full">Foto para personalização:<input id="fotoDetalhe" type="file" accept="image/*"></label>${escolhas.fotoNome?`<small class="full">Imagem selecionada: ${esc(escolhas.fotoNome)}</small>`:""}</div>`;
+else body=`<div class="summary"><p>Modelo: ${esc(escolhas.modelo||"-")}</p><p>Contas: ${esc(escolhas.contas||"-")}</p><p>Nome: ${esc(escolhas.nome||"-")}</p><p>Foto: ${esc(escolhas.fotoNome||"Nenhuma foto enviada")}</p></div>`;
 }else{
-body=`<p class="copy">Escolha como separar as contas.</p><div class="choices">${separacoes.map(x=>`<button class="choice ${escolhas.separacao===x[0]?"selected":""}" onclick="escolhas.separacao='${x[0]}';montar()"><strong>${x[0]}</strong>${x[1]}</button>`).join("")}</div>`;
-}
-}else if(etapa===6)body=`<p class="copy">Escolha um extra para sua peça.</p><div class="choices"><button class="choice ${escolhas.extra==="Relicário"?"selected":""}" onclick="escolhas.extra='Relicário';montar()"><strong>Relicário</strong>Adicionar relicário</button><button class="choice ${escolhas.extra==="Pingente"?"selected":""}" onclick="escolhas.extra='Pingente';montar()"><strong>Pingente</strong>Adicionar pingente</button><button class="choice ${escolhas.extra==="Não adicionar"?"selected":""}" onclick="escolhas.extra='Não adicionar';montar()"><strong>Não adicionar</strong>Sem extra adicional</button></div>`;
-else if(etapa===7)body=`<div class="form"><input id="nomeDetalhe" value="${esc(escolhas.nome||"")}" placeholder="Nome personalizado"><textarea id="mensagem" class="full" placeholder="Mensagem ou observações">${esc(escolhas.mensagem||"")}</textarea><label class="full">Foto para personalização: <input id="foto" type="file" accept="image/*"></label>${escolhas.fotoNome?`<small class="full">Imagem selecionada: ${esc(escolhas.fotoNome)}</small>`:""}</div>`;
-else body=`<div class="summary"><h3>Resumo da montagem</h3><p><b>Produto:</b> ${esc(atual.name)}</p><p><b>Entremeio:</b> ${esc(nomeOpcao(escolhas.entremeio,entremeios)||"Não selecionado")}</p><p><b>Crucifixo:</b> ${esc(nomeOpcao(escolhas.crucifixo,cruzes)||"Não selecionado")}</p><p><b>Ave Maria:</b> ${esc(nomeOpcao(escolhas.aveMaria,contas)||"Não selecionada")}</p><p><b>Pai Nosso:</b> ${esc(nomeOpcao(escolhas.paiNosso,contas)||"Não selecionada")}</p><p><b>Técnica:</b> ${esc(nomeOpcao(escolhas.tecnica,tecnicas)||"Não selecionada")}</p><p><b>Separar contas:</b> ${escolhas.tecnica==="T02"?"Não se aplica, técnica contrapino":esc(nomeOpcao(escolhas.separacao,separacoes)||"Não selecionado")}</p><p><b>Extra:</b> ${esc(escolhas.extra||"Não selecionado")}</p><p><b>Nome:</b> ${esc(escolhas.nome||"Não informado")}</p><p><b>Mensagem:</b> ${esc(escolhas.mensagem||"Não informada")}</p><p><b>Imagem:</b> ${esc(escolhas.fotoNome||"Nenhuma imagem enviada")}</p><p>O valor será confirmado pelo ateliê.</p></div>`;
+if(etapa===0)body=`<div class="form"><label class="full"><b>Caneca</b><select id="modeloCaneca">${modelosCaneca.map(x=>`<option value="${x[0]}">${x[1]}</option>`).join("")}</select></label><textarea id="detalhesCaneca" class="full" placeholder="Referências ou texto">${esc(escolhas.detalhes||"")}</textarea><label class="full">Imagem de referência:<input id="fotoDetalhe" type="file" accept="image/*"></label>${escolhas.fotoNome?`<small class="full">Imagem selecionada: ${esc(escolhas.fotoNome)}</small>`:""}</div>`;
+else body=`<div class="summary"><p>Caneca: ${esc(escolhas.caneca||"-")}</p><p>Detalhes: ${esc(escolhas.detalhes||"-")}</p><p>Foto: ${esc(escolhas.fotoNome||"Nenhuma foto enviada")}</p></div>`;
 }
 document.getElementById("builderBody").innerHTML=body
 }
-function prepararFoto(file){
-return new Promise((resolve,reject)=>{
-const reader=new FileReader();
-reader.onload=function(){
-const imagem=new Image();
-imagem.onload=function(){
-const limite=1200,escala=Math.min(1,limite/Math.max(imagem.width,imagem.height)),canvas=document.createElement("canvas");
-canvas.width=Math.max(1,Math.round(imagem.width*escala));canvas.height=Math.max(1,Math.round(imagem.height*escala));
-canvas.getContext("2d").drawImage(imagem,0,0,canvas.width,canvas.height);
-canvas.toBlob(function(blob){
-if(!blob){resolve({data:reader.result});return}
-const leitor=new FileReader();leitor.onload=()=>resolve({data:leitor.result});leitor.onerror=reject;leitor.readAsDataURL(blob)
-},"image/jpeg",.78)
-};
-imagem.onerror=()=>resolve({data:reader.result});imagem.src=reader.result
-};
-reader.onerror=reject;reader.readAsDataURL(file)
+function capturarFoto(){
+return new Promise(resolve=>{
+const campo=document.getElementById("fotoDetalhe");
+if(!campo||!campo.files||!campo.files[0])return resolve();
+const arquivo=campo.files[0],leitor=new FileReader();
+leitor.onload=()=>{escolhas.fotoData=leitor.result;escolhas.fotoNome=arquivo.name;resolve()};
+leitor.onerror=()=>{aviso("Não foi possível carregar a foto.");resolve()};
+leitor.readAsDataURL(arquivo)
 })
 }
-async function capturarFoto(){
-const campo=document.getElementById("foto");
-if(!campo||!campo.files||!campo.files[0])return;
-const arquivo=campo.files[0];
-try{const foto=await prepararFoto(arquivo);escolhas.fotoData=foto.data;escolhas.fotoNome=arquivo.name}catch(e){aviso("Não foi possível preparar a imagem.")}
-}
-async function nextStep(){
-const tipo=atual.id,limite=tipo==="chaveiro"?3:tipo==="caneca"?1:8;
-if(tipo==="chaveiro"){
-if(etapa===0&&!escolhas.modelo)return aviso("Escolha o modelo do chaveiro.");
-if(etapa===1&&!escolhas.contas)return aviso("Escolha a cor das contas.");
-if(etapa===2){escolhas.nome=document.getElementById("nomeDetalhe").value;await capturarFoto()}
-}else if(tipo==="caneca"){
-if(etapa===0){escolhas.caneca=document.getElementById("modeloCaneca").value;escolhas.detalhes=document.getElementById("detalhesCaneca").value;await capturarFoto()}
-}else{
-if(etapa===0&&!escolhas.entremeio)return aviso("Escolha um entremeio para continuar.");
-if(etapa===1&&!escolhas.crucifixo)return aviso("Escolha um crucifixo para continuar.");
-if(etapa===2&&!escolhas.aveMaria)return aviso("Escolha as contas de Ave Maria para continuar.");
-if(etapa===3&&!escolhas.paiNosso)return aviso("Escolha as contas de Pai Nosso para continuar.");
-if(etapa===4&&!escolhas.tecnica)return aviso("Escolha uma técnica para continuar.");
-if(etapa===5&&escolhas.tecnica!=="T02"&&!escolhas.separacao){return aviso("Escolha como separar as contas para continuar.")}
-if(etapa===5&&escolhas.tecnica==="T02"){escolhas.separacao="Não se aplica"}
-if(etapa===6&&!escolhas.extra)return aviso("Escolha um extra ou selecione não adicionar.");
+async function avancar(){
+const completo=atual.id==="terco"||atual.id==="dezena",limite=completo?8:atual.id==="chaveiro"?3:1;
+if(completo){
+if(etapa===0&&!escolhas.entremeio)return aviso("Escolha um entremeio.");
+if(etapa===1&&!escolhas.crucifixo)return aviso("Escolha um crucifixo.");
+if(etapa===2&&!escolhas.aveMaria)return aviso("Escolha as contas de Ave Maria.");
+if(etapa===3&&!escolhas.paiNosso)return aviso("Escolha as contas de Pai Nosso.");
+if(etapa===4&&!escolhas.tecnica)return aviso("Escolha uma técnica.");
+if(etapa===5&&escolhas.tecnica!=="T02"&&!escolhas.separacao)return aviso("Escolha como separar as contas.");
+if(etapa===5&&escolhas.tecnica==="T02")escolhas.separacao="Não se aplica";
+if(etapa===6&&!escolhas.extra)return aviso("Escolha um extra.");
 if(etapa===7){escolhas.nome=document.getElementById("nomeDetalhe").value;escolhas.mensagem=document.getElementById("mensagem").value;await capturarFoto()}
+}else if(atual.id==="chaveiro"){
+if(etapa===0&&!escolhas.modelo)return aviso("Escolha o modelo.");
+if(etapa===1&&!escolhas.contas)return aviso("Escolha as contas.");
+if(etapa===2){escolhas.nome=document.getElementById("nomeDetalhe").value;await capturarFoto()}
+}else if(etapa===0){escolhas.caneca=document.getElementById("modeloCaneca").value;escolhas.detalhes=document.getElementById("detalhesCaneca").value;await capturarFoto()}
+if(etapa<limite){etapa++;montar()}else{carrinho.push({produto:atual.name,produtoId:atual.id,escolhas:{...escolhas}});salvar("carrinho-bela-senhora",carrinho);fechar("builderModal");render();aviso("Peça adicionada ao carrinho.")}
 }
-if(etapa<limite){etapa++;montar()}else{carrinho.push({produto:atual.name,produtoId:atual.id,escolhas:{...escolhas}});salvar("carrinho",carrinho);closeModal("builderModal");render();aviso("Peça adicionada ao carrinho.")}
+function voltar(){if(etapa>0){etapa--;montar()}}
+function estoqueAutorizado(){try{return sessionStorage.getItem("estoque-autorizado-bela-senhora")==="sim"}catch(e){return false}}
+function autenticarEstoque(){
+if(estoqueAutorizado())return true;
+const senha=prompt("Digite a senha para acessar o estoque:");
+if(senha===SENHA_ESTOQUE){try{sessionStorage.setItem("estoque-autorizado-bela-senhora","sim")}catch(e){}return true}
+if(senha!==null)aviso("Senha incorreta.");return false
 }
-function prevStep(){if(etapa>0){etapa--;montar()}}
-function nomeOpcao(codigo,lista){const item=lista.find(x=>x[0]===codigo);return item?`${item[0]} - ${item[1]}`:codigo}
-function formatarItem(item){
-const c=item.escolhas||{},linhas=[`Produto: ${item.produto}`];
-if(item.produtoId==="chaveiro"||c.modelo){linhas.push(`Modelo: ${nomeOpcao(c.modelo,modelosChaveiro)}`);linhas.push(`Contas: ${nomeOpcao(c.contas,contas)}`)}
-else if(item.produtoId==="caneca"||c.caneca){linhas.push(`Caneca: ${nomeOpcao(c.caneca,modelosCaneca)}`);linhas.push(`Detalhes: ${c.detalhes||"Não informado"}`)}
-else{
-linhas.push(`Entremeio: ${nomeOpcao(c.entremeio,entremeios)}`);
-linhas.push(`Crucifixo: ${nomeOpcao(c.crucifixo,cruzes)}`);
-linhas.push(`Contas Ave Maria: ${nomeOpcao(c.aveMaria,contas)}`);
-linhas.push(`Contas Pai Nosso: ${nomeOpcao(c.paiNosso,contas)}`);
-linhas.push(`Técnica: ${nomeOpcao(c.tecnica,tecnicas)}`);
-linhas.push(`Separar contas: ${c.tecnica==="T02"?"Não se aplica, técnica contrapino":nomeOpcao(c.separacao,separacoes)}`);
-linhas.push(`Extra: ${c.extra||"Não informado"}`);
-linhas.push(`Nome: ${c.nome||"Não informado"}`);
-linhas.push(`Mensagem: ${c.mensagem||"Não informada"}`)
+function abrirEstoque(){
+if(!autenticarEstoque())return;
+const grupos=[["Contas","contas",contas],["Entremeios","entremeios",entremeios],["Crucifixos","crucifixos",crucifixos],["Canecas","canecas",modelosCaneca]];
+document.getElementById("stockBody").innerHTML=grupos.map(g=>`<div class="stock-group"><h3>${g[0]}</h3>${g[2].map(x=>`<label class="stock-row"><span>${x[1]}</span><input type="number" min="0" data-grupo="${g[1]}" data-codigo="${x[0]}" value="${estoque[g[1]][x[0]]||0}"></label>`).join("")}</div>`).join("");
+mostrar("stockModal")
 }
-linhas.push(`Imagem enviada: ${c.fotoNome||"Nenhuma"}`);
-return linhas.join("\n")
+function salvarEstoque(){
+document.querySelectorAll("#stockBody input").forEach(input=>{
+const grupo=input.dataset.grupo,codigo=input.dataset.codigo;
+if(!estoque[grupo])estoque[grupo]={};
+estoque[grupo][codigo]=Math.max(0,parseInt(input.value,10)||0)
+});
+salvar("estoque-bela-senhora",estoque);fechar("stockModal");montar();aviso("Estoque atualizado.")
 }
-function openCart(){
+function abrirCarrinho(){
 mostrar("cartModal");
-document.getElementById("cartBody").innerHTML=carrinho.length?carrinho.map((x,i)=>`<div class="summary" style="margin:10px 0;white-space:pre-line"><b>${esc(x.produto)}</b><br>${esc(formatarItem(x))}<br><button onclick="remover(${i})">Remover</button></div>`).join("")+`<button class="btn" onclick="closeModal('cartModal');mostrar('deliveryModal')">Continuar para entrega</button>`:"<p class='copy'>Seu carrinho está vazio.</p>"
+document.getElementById("cartBody").innerHTML=carrinho.length?carrinho.map((item,i)=>`<div class="summary" style="margin:10px 0"><b>${esc(item.produto)}</b><br>${Object.entries(item.escolhas).filter(([k])=>k!=="fotoData").map(([k,v])=>`${esc(k)}: ${esc(v)}`).join(" • ")}<br><button onclick="remover(${i})">Remover</button></div>`).join("")+"<button class='btn' onclick=\"fechar('cartModal');mostrar('deliveryModal')\">Continuar para entrega</button>":"<p class='copy'>Seu carrinho está vazio.</p>"
 }
-function remover(i){carrinho.splice(i,1);salvar("carrinho",carrinho);render();openCart()}
-function toggleCpf(v){const c=document.getElementById("cpf");c.style.display=v.includes("nacional")?"block":"none";c.required=v.includes("nacional")}
-function dataUrlParaArquivo(dataUrl,nome){
-const partes=dataUrl.split(","),tipo=(partes[0].match(/:(.*?);/)||[])[1]||"image/jpeg",binario=atob(partes[1]),bytes=new Uint8Array(binario.length);
-for(let i=0;i<binario.length;i++)bytes[i]=binario.charCodeAt(i);
-return new File([bytes],nome||"imagem-pedido.jpg",{type:tipo})
+function remover(i){carrinho.splice(i,1);salvar("carrinho-bela-senhora",carrinho);render();abrirCarrinho()}
+function baixarFotos(){
+carrinho.forEach(item=>{
+const c=item.escolhas||{};
+if(c.fotoData){
+const link=document.createElement("a");
+link.href=c.fotoData;
+link.download=c.fotoNome||"foto-pedido.jpg";
+document.body.appendChild(link);link.click();link.remove()
 }
-async function enviarPedidoWhatsApp(texto,arquivos){
-if(arquivos.length&&navigator.share&&navigator.canShare){
-try{if(navigator.canShare({files:arquivos})){await navigator.share({title:"Pedido Bela Senhora",text:texto,files:arquivos});return true}}
-catch(e){if(e&&e.name==="AbortError")return false}
+})
 }
-window.open("https://wa.me/5547999383797?text="+encodeURIComponent(texto),"_blank");
-if(arquivos.length)arquivos.forEach((arquivo,i)=>{const link=document.createElement("a");link.href=URL.createObjectURL(arquivo);link.download=arquivo.name||`imagem-pedido-${i+1}.jpg`;document.body.appendChild(link);link.click();setTimeout(()=>URL.revokeObjectURL(link.href),3000);link.remove()});
-if(arquivos.length)aviso("WhatsApp foi aberto. Anexe as imagens que foram baixadas.");
-return true
-}
-document.getElementById("deliveryForm").onsubmit=async function(e){
+document.getElementById("deliveryForm").onsubmit=function(e){
 e.preventDefault();
-if(!carrinho.length){aviso("O carrinho está vazio.");return}
-const f=new FormData(e.target),pedido="BS-"+Date.now().toString().slice(-6),itens=carrinho.map((item,i)=>`\nITEM ${i+1}\n${formatarItem(item)}`).join("\n");
-const texto=["Olá, Bela Senhora! Recebi uma nova solicitação pelo site.","",`Pedido: ${pedido}`,"","DADOS DO CLIENTE",`Nome: ${f.get("nome")||""}`,`Telefone: ${f.get("telefone")||""}`,`E-mail: ${f.get("email")||""}`,`CEP: ${f.get("cep")||""}`,`Endereço: ${f.get("endereco")||""}`,`Cidade: ${f.get("cidade")||""}`,`Estado: ${f.get("estado")||""}`,`Forma de entrega: ${f.get("frete")||""}`,`CPF: ${f.get("cpf")||"Não informado"}`,`De onde nos conheceu: ${f.get("origem")||""}`,"","ITENS DO PEDIDO",itens,"","Por favor, confirme disponibilidade e valor."].join("\n");
-const imagens=[];
-carrinho.forEach(item=>{const c=item.escolhas||{};if(c.fotoData)imagens.push(dataUrlParaArquivo(c.fotoData,c.fotoNome||"imagem-pedido.jpg"))});
-aviso(imagens.length?"Preparando pedido e imagem...":"Preparando pedido...");
-const enviado=await enviarPedidoWhatsApp(texto,imagens);
-if(enviado){carrinho=[];salvar("carrinho",carrinho);render();closeModal("deliveryModal");e.target.reset();document.getElementById("cpf").style.display="none";document.getElementById("cpf").required=false;aviso("Pedido preparado com todas as escolhas.")}
+const f=new FormData(e.target);
+const texto=["Olá, Bela Senhora! Recebi uma nova solicitação pelo site.","",`Nome: ${f.get("nome")}`,`Telefone: ${f.get("telefone")}`,`E-mail: ${f.get("email")}`,`CEP: ${f.get("cep")}`,`Endereço: ${f.get("endereco")}`,`Cidade: ${f.get("cidade")}`,`Estado: ${f.get("estado")}`,`Entrega: ${f.get("frete")}`,`Origem: ${f.get("origem")}`,"","ITENS DO PEDIDO",...carrinho.map((x,i)=>`ITEM ${i+1}: ${x.produto}\n${Object.entries(x.escolhas).filter(([k])=>k!=="fotoData").map(([k,v])=>`${k}: ${v}`).join("\n")}`)].join("\n");
+window.open("https://wa.me/5547999383797?text="+encodeURIComponent(texto),"_blank");
+const possuiFoto=carrinho.some(x=>x.escolhas&&x.escolhas.fotoData);
+if(possuiFoto)setTimeout(baixarFotos,500);
+carrinho=[];salvar("carrinho-bela-senhora",carrinho);render();fechar("deliveryModal");e.target.reset();aviso(possuiFoto?"Pedido enviado. A foto foi baixada para anexar no WhatsApp.":"Pedido enviado para o WhatsApp.")
 };
 render();
 </script>
